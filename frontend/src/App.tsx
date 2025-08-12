@@ -14,11 +14,11 @@ export default function App() {
   }
 
   return (
-    <div>
-      <nav>
-        <button onClick={() => setView('users')}>Usuários</button>
-        <button onClick={() => setView('profiles')}>Perfis</button>
-        <button onClick={() => setToken(null)}>Sair</button>
+    <div className="p-4">
+      <nav className="mb-4 space-x-2">
+        <button className="px-2 py-1 bg-gray-200 rounded" onClick={() => setView('users')}>Usuários</button>
+        <button className="px-2 py-1 bg-gray-200 rounded" onClick={() => setView('profiles')}>Perfis</button>
+        <button className="px-2 py-1 bg-gray-200 rounded" onClick={() => setToken(null)}>Sair</button>
       </nav>
       {view === 'users' ? <Users token={token} /> : <Profiles token={token} />}
     </div>

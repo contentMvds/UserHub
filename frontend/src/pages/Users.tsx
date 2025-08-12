@@ -44,34 +44,40 @@ export default function Users({ token }: Props) {
   };
 
   return (
-    <div>
-      <h2>Usuários</h2>
-      <ul>
+
+    <div className="p-4">
+      <h2 className="text-xl font-bold mb-2">Usuários</h2>
+      <ul className="mb-4 space-y-1">
         {users.map((u) => (
-          <li key={u.id}>
-            {u.email} (perfil: {u.profileId})
-            <button onClick={() => remove(u.id)}>Excluir</button>
+          <li key={u.id} className="flex justify-between border-b py-1">
+            <span>{u.email} (perfil: {u.profileId})</span>
+            <button className="text-red-500" onClick={() => remove(u.id)}>Excluir</button>
           </li>
         ))}
       </ul>
-      <form onSubmit={create}>
+      <form onSubmit={create} className="space-y-2">
         <input
+          className="w-full border p-2"
+
           placeholder="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
+          className="w-full border p-2"
+
           type="password"
           placeholder="senha"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
         <input
+          className="w-full border p-2"
           placeholder="profileId"
           value={profileId}
           onChange={(e) => setProfileId(e.target.value)}
         />
-        <button type="submit">Adicionar</button>
+        <button type="submit" className="bg-blue-500 text-white px-2 py-1 rounded">Adicionar</button>
       </form>
     </div>
   );

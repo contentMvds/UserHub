@@ -50,7 +50,8 @@ Um usuário administrador padrão é criado ao iniciar a aplicação:
 
 ## Frontend
 
-O frontend em React está na pasta `frontend`.
+O frontend em React com Vite e Tailwind CSS está na pasta `frontend`.
+
 
 ### Desenvolvimento
 
