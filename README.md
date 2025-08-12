@@ -47,9 +47,11 @@ Um usuário administrador padrão é criado ao iniciar a aplicação:
 - Email: `admin@example.com`
 - Senha: `admin123`
 
+
 ## Frontend
 
 O frontend em React com Vite e Tailwind CSS está na pasta `frontend`.
+
 
 ### Desenvolvimento
 
@@ -59,3 +61,4 @@ npm --prefix frontend run dev
 ```
 
 A aplicação estará disponível em `http://localhost:5173` e fará proxy para a API em `http://localhost:3000`.
+
