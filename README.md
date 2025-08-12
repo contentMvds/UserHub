@@ -1,21 +1,31 @@
 # UserHub
 
 Aplicação em TypeScript para gerenciamento de usuários, login e controle de perfis de acesso.
+## Estrutura
+
+O repositório está organizado em duas pastas principais:
+
+- `backend/` — API Express em TypeScript com autenticação JWT e CRUD de usuários e perfis.
+- `frontend/` — aplicação React com Vite e Tailwind CSS para consumir a API.
 
 ## Requisitos
 
 - Node.js >= 16
 
-## Instalação
+
+## Backend
+
+### Instalação
 
 ```bash
-npm install
+npm --prefix backend install
 ```
 
-## Execução em desenvolvimento
+### Execução em desenvolvimento
 
 ```bash
-npm run dev
+npm --prefix backend run dev
+
 ```
 
 O servidor ficará disponível em `http://localhost:3000`.
@@ -49,16 +59,29 @@ Um usuário administrador padrão é criado ao iniciar a aplicação:
 
 
 ## Frontend
-
 O frontend em React com Vite e Tailwind CSS está na pasta `frontend`.
 
+### Instalação
+
+```bash
+npm --prefix frontend install
+```
 
 ### Desenvolvimento
 
 ```bash
 npm --prefix frontend install
-npm --prefix frontend run dev
 ```
 
 A aplicação estará disponível em `http://localhost:5173` e fará proxy para a API em `http://localhost:3000`.
+
+## Docker
+
+Uma alternativa é utilizar contêineres Docker para executar os serviços:
+
+```bash
+docker-compose up --build
+```
+
+O `docker-compose.yml` sobe dois serviços: `backend` na porta `3000` e `frontend` na porta `5173`.
 

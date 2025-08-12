@@ -44,7 +44,6 @@ export default function Users({ token }: Props) {
   };
 
   return (
-
     <div className="p-4">
       <h2 className="text-xl font-bold mb-2">Usuários</h2>
       <ul className="mb-4 space-y-1">
@@ -58,14 +57,12 @@ export default function Users({ token }: Props) {
       <form onSubmit={create} className="space-y-2">
         <input
           className="w-full border p-2"
-
           placeholder="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           className="w-full border p-2"
-
           type="password"
           placeholder="senha"
           value={password}

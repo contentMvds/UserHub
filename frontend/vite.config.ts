@@ -6,7 +6,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000',
+        // Point to the backend service when running via docker-compose
+        target: 'http://backend:3000',
         changeOrigin: true
       }
     }

@@ -39,7 +39,6 @@ export default function Profiles({ token }: Props) {
   };
 
   return (
-
     <div className="p-4">
       <h2 className="text-xl font-bold mb-2">Perfis</h2>
       <ul className="mb-4 space-y-1">
@@ -53,7 +52,6 @@ export default function Profiles({ token }: Props) {
       <form onSubmit={create} className="space-y-2">
         <input
           className="w-full border p-2"
-
           placeholder="nome"
           value={name}
           onChange={(e) => setName(e.target.value)}
