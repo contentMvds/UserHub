@@ -47,6 +47,7 @@ Um usuário administrador padrão é criado ao iniciar a aplicação:
 - Email: `admin@example.com`
 - Senha: `admin123`
 
+
 ## Frontend
 
 O frontend em React está na pasta `frontend`.
@@ -59,3 +60,4 @@ npm --prefix frontend run dev
 ```
 
 A aplicação estará disponível em `http://localhost:5173` e fará proxy para a API em `http://localhost:3000`.
+
