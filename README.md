@@ -1,7 +1,6 @@
 # UserHub
 
 Aplicação em TypeScript para gerenciamento de usuários, login e controle de perfis de acesso.
-
 ## Estrutura
 
 O repositório está organizado em duas pastas principais:
@@ -12,6 +11,7 @@ O repositório está organizado em duas pastas principais:
 ## Requisitos
 
 - Node.js >= 16
+
 
 ## Backend
 
@@ -25,6 +25,7 @@ npm --prefix backend install
 
 ```bash
 npm --prefix backend run dev
+
 ```
 
 O servidor ficará disponível em `http://localhost:3000`.
@@ -56,7 +57,9 @@ Um usuário administrador padrão é criado ao iniciar a aplicação:
 - Email: `admin@example.com`
 - Senha: `admin123`
 
+
 ## Frontend
+O frontend em React com Vite e Tailwind CSS está na pasta `frontend`.
 
 ### Instalação
 
@@ -67,7 +70,7 @@ npm --prefix frontend install
 ### Desenvolvimento
 
 ```bash
-npm --prefix frontend run dev
+npm --prefix frontend install
 ```
 
 A aplicação estará disponível em `http://localhost:5173` e fará proxy para a API em `http://localhost:3000`.

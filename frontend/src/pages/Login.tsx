@@ -46,5 +46,6 @@ export default function Login({ onLogin }: Props) {
         <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded">Entrar</button>
       </form>
     </div>
+
   );
 }
